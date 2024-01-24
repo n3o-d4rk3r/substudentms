@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-    <title>@yield('title','') | Neptune - Multipurpose Bootstrap Admin Template </title>
+    <title>@yield('title','') | SUBCMS Admin </title>
     <!-- initiate head with meta tags, css and script -->
     @include('include.head')
 
