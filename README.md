@@ -14,53 +14,22 @@
 
 ## 🚀 Features
 
-- **User-Friendly Interface** 🌐
-   - Intuitive and easy-to-use interface designed for administrators, teachers, and students. Navigate seamlessly and perform tasks with efficiency.
-
-- **Attendance Tracking** 📅
-   - Keep track of student attendance with ease. Streamline attendance management for accurate records and reporting.
-
-- **Grade Management** 🎓
-   - Effortlessly manage and organize student grades and academic performance. Simplify the grading process for a more efficient academic workflow.
-
-- **Communication Hub** 📧
-   - Foster communication between teachers, students, and parents within the system. Enhance collaboration and keep stakeholders informed.
-
-- **Security Measures** 🔒
-   - Prioritize the security of student data with robust security measures. Ensure confidentiality and integrity of sensitive information.
-
-- **Programming Judge** 💻
-   - Evaluate and grade programming assignments with a built-in programming judge. Automate the assessment of coding tasks for efficiency.
-
-7. **Voting System** 🗳️
-   - Conduct polls and gather votes for student elections and other decision-making processes. Facilitate democratic processes within the educational community.
-
-8. **Blood System** 🩸
-   - Manage a blood donation system within the educational community for emergencies. Facilitate the organization of blood donation drives and ensure preparedness for medical emergencies.
-
-- **Library Management** 📚
-   - Keep track of library resources, checkouts, and returns. Organize and manage the educational materials available in the institution's library.
-
-- **Event Calendar** 📅
-   - Manage and display important academic and extracurricular events. Keep the educational community informed about upcoming activities.
-
-- **Student Performance Analytics** 📊
-    - Visualize and analyze student performance trends for informed decision-making. Gain insights into academic achievements and areas for improvement.
-
-- **Parental Portal** 👨‍👩‍👧
-    - Provide parents with a portal to monitor their child's academic progress and communication. Enhance parent-teacher collaboration for student success.
-
-- **Classroom Collaboration Tools** 🤝
-    - Facilitate collaborative learning with tools for group projects and discussions. Encourage teamwork and interaction among students.
-
-- **Internship/Job Board** 💼
-    - Connect students with internship and job opportunities relevant to their field of study. Bridge the gap between education and the professional world.
-
-- **Feedback System** 📝
-    - Gather feedback from students and teachers to improve the educational experience. Continuously enhance the quality of education based on valuable input.
-
-- **Mobile Accessibility** 📱
-    - Ensure accessibility through a responsive design for mobile devices. Enable users to access the system seamlessly from their smartphones and tablets.
+- **User-Friendly Interface** 🌐: Intuitive interface for administrators, teachers, and students.
+- **Attendance Tracking** 📅: Easily monitor student attendance.
+- **Grade Management** 🎓: Effortlessly organize student grades and academic performance.
+- **Communication Hub** 📧: Foster collaboration among teachers, students, and parents.
+- **Security Measures** 🔒: Prioritize student data security with robust measures.
+- **Programming Judge** 💻: Evaluate and grade programming assignments efficiently.
+- **Voting System** 🗳️: Conduct polls for student elections and decision-making.
+- **Blood System** 🩸: Manage a blood donation system for emergencies.
+- **Library Management** 📚: Organize library resources, checkouts, and returns.
+- **Event Calendar** 📅: Manage academic and extracurricular events.
+- **Student Performance Analytics** 📊: Visualize and analyze student performance trends.
+- **Parental Portal** 👨‍👩‍👧: Provide parents a portal to monitor academic progress.
+- **Classroom Collaboration Tools** 🤝: Facilitate collaborative learning with project tools.
+- **Internship/Job Board** 💼: Connect students with relevant opportunities.
+- **Feedback System** 📝: Gather feedback to enhance the educational experience.
+- **Mobile Accessibility** 📱: Ensure accessibility through a responsive design.
 
 
 
