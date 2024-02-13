@@ -82,7 +82,7 @@
                         <div class="slider-half">
                             <div class="slide-content">
                                 <div class="top-sign-up ">
-                                    <div class="about-comp text-white mt-2">{{__('SUB Management System')}}</div>
+                                    <div class="about-comp text-white mt-2">{{__('SUB Programming Contest Management System')}}</div>
                                     <div class="for-sign-up">
                                         <p class="text-white font-12 mt-2 font-weight-300">{{__('Don\'t have an account ?')}}</p>
                                         <a href="{{ url('register') }}">{{ __('Sign Up') }}</a>
@@ -92,17 +92,17 @@
                                 <div class="owl-carousel owl-theme">
                                     <div class="item">
                                         <i class="lar la-grin-alt font-45 text-white"></i>
-                                        <h2 class="font-30 text-white mt-2">{{__('Start your journey')}}</h2>
-                                        <p class="summary-count text-white font-12 mt-2 slide-text" >{{__('Everyone has been made for some particular work, and the desire for that work has been put in every heart')}}</p>
+                                        <h2 class="font-30 text-white mt-2">{{__('Welcome to SUB Programming Contest Management System')}}</h2>
+                                        <p class="summary-count text-white font-12 mt-2 slide-text" >{{__('Everyone has been made for some particular work, We are the future leaders of Bangladesh')}}</p>
                                     </div>
                                     <div class="item">
                                         <i class="lar la-clock font-45 text-white"></i>
-                                        <h2 class="font-30 text-white mt-2">{{__('Save your time')}}</h2>
+                                        <h2 class="font-30 text-white mt-2">{{__('Welcome to SUB Programming Contest Management System')}}</h2>
                                         <p class="summary-count text-white font-12 mt-2 slide-text" >{{__('Everyone has been made for some particular work, and the desire for that work has been put in every heart')}}</p>
                                     </div>
                                     <div class="item">
                                         <i class="las la-hand-holding-usd font-45 text-white"></i>
-                                        <h2 class="font-30 text-white mt-2">{{__('Save your money')}}</h2>
+                                        <h2 class="font-30 text-white mt-2">{{__('Welcome to SUB Programming Contest Management System')}}</h2>
                                         <p class="summary-count text-white font-12 mt-2 slide-text" >{{__('Everyone has been made for some particular work, and the desire for that work has been put in every heart')}}</p>
                                     </div>
                                 </div>
