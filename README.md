@@ -47,7 +47,8 @@ Follow the steps below to set up SMSLAB on your local machine:
 Laravel is a web application framework with expressive, elegant syntax, making development an enjoyable and creative experience.
 🌟 Sponsors
 
-We extend our thanks to the following sponsors for funding Laravel development. Interested in becoming a sponsor? Visit the Laravel Patreon page.
+We extend our thanks to the following sponsors for funding Laravel development. Interested in becoming a sponsor? Contact: ictd.kabir@gmail.com.
+
 🤝 Partners
 🙌 Contributors
 
