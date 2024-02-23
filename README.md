@@ -3,8 +3,6 @@
     <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo">
   </a>
 </p>
-
-
 <h1 align="center">SMSLAB - Student Management System</h1>
 
 <p align="center">
@@ -56,7 +54,7 @@ We extend our thanks to the following sponsors for funding Laravel development. 
 We extend our gratitude to the following contributors for their valuable contributions to SMSLAB:
 
 - <a href="https://github.com/n3o-d4rk3r" target="_blank">Md Kabir Hassan - Lead Developer</a>
-- <a href="https://github.com/siammahfuz" target="_blank">Siam Khan - UI/UX Designer</a>
+- <a href="https://github.com/siammahfuz" target="_blank">Siam Khan - Bankend Developer</a>
 - Anushka Bhuiyan - QA Tester
 
 📜 License
