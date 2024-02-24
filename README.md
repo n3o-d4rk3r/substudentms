@@ -41,8 +41,6 @@ Follow the steps below to set up SMSLAB on your local machine:
    ```bash
    git clone https://github.com/n3o-d4rk3r/substudentms.git
 
-   ℹ️ About Laravel
-
 Laravel is a web application framework with expressive, elegant syntax, making development an enjoyable and creative experience.
 🌟 Sponsors
 
