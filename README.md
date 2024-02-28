@@ -9,7 +9,6 @@
   <img src="INSERT_YOUR_LOGO_URL" width="150" alt="SMSLAB Logo">
 </p>
 
-
 <p align="center">A robust and user-friendly Student Management System built on the Laravel framework. Simplifying common tasks in student management for seamless workflow in educational institutions.</p>
 
 ## 🚀 Features
