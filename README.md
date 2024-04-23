@@ -52,7 +52,7 @@ We extend our thanks to the following sponsors for funding Laravel development. 
 We extend our gratitude to the following contributors for their valuable contributions to SMSLAB:
 
 - <a href="https://github.com/n3o-d4rk3r" target="_blank">Md Kabir Hassan - Lead Developer</a>
-- <a href="https://github.com/siammahfuz" target="_blank">Siam Khan - Bankend Developer</a>
+- <a href="https://github.com/siammahfuz" target="_blank">Siam Khan - QA Tester</a>
 - Anushka Bhuiyan - QA Tester
 
 📜 License
