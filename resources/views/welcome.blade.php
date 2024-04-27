@@ -1,132 +1,944 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
 
-        <title>Laravel</title>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-        <!-- Fonts -->
-        <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>ICPC Asia Dhaka Regional Contest - SUB</title>
+  <meta content="The International Collegiate Programming Contest is an algorithmic programming contest for college students. Teams of three, representing their university, work to solve the most real-world problems, fostering collaboration, creativity, innovation, and the ability to perform under pressure. Through training and competition, teams challenge each other to raise the bar on the possible. Quite simply, it is the oldest, largest, and most prestigious programming contest in the world." name="description">
+  <meta content="icpc, icpc 2023, dhaka regional icpc, bubt, bubt icpc" name="keywords">
+  <meta name="mahin" content="author">
 
-        <!-- Styles -->
-        <style>
-            /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}a{background-color:transparent}[hidden]{display:none}html{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5}*,:after,:before{box-sizing:border-box;border:0 solid #e2e8f0}a{color:inherit;text-decoration:inherit}svg,video{display:block;vertical-align:middle}video{max-width:100%;height:auto}.bg-white{--tw-bg-opacity: 1;background-color:rgb(255 255 255 / var(--tw-bg-opacity))}.bg-gray-100{--tw-bg-opacity: 1;background-color:rgb(243 244 246 / var(--tw-bg-opacity))}.border-gray-200{--tw-border-opacity: 1;border-color:rgb(229 231 235 / var(--tw-border-opacity))}.border-t{border-top-width:1px}.flex{display:flex}.grid{display:grid}.hidden{display:none}.items-center{align-items:center}.justify-center{justify-content:center}.font-semibold{font-weight:600}.h-5{height:1.25rem}.h-8{height:2rem}.h-16{height:4rem}.text-sm{font-size:.875rem}.text-lg{font-size:1.125rem}.leading-7{line-height:1.75rem}.mx-auto{margin-left:auto;margin-right:auto}.ml-1{margin-left:.25rem}.mt-2{margin-top:.5rem}.mr-2{margin-right:.5rem}.ml-2{margin-left:.5rem}.mt-4{margin-top:1rem}.ml-4{margin-left:1rem}.mt-8{margin-top:2rem}.ml-12{margin-left:3rem}.-mt-px{margin-top:-1px}.max-w-6xl{max-width:72rem}.min-h-screen{min-height:100vh}.overflow-hidden{overflow:hidden}.p-6{padding:1.5rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.pt-8{padding-top:2rem}.fixed{position:fixed}.relative{position:relative}.top-0{top:0}.right-0{right:0}.shadow{--tw-shadow: 0 1px 3px 0 rgb(0 0 0 / .1), 0 1px 2px -1px rgb(0 0 0 / .1);--tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow)}.text-center{text-align:center}.text-gray-200{--tw-text-opacity: 1;color:rgb(229 231 235 / var(--tw-text-opacity))}.text-gray-300{--tw-text-opacity: 1;color:rgb(209 213 219 / var(--tw-text-opacity))}.text-gray-400{--tw-text-opacity: 1;color:rgb(156 163 175 / var(--tw-text-opacity))}.text-gray-500{--tw-text-opacity: 1;color:rgb(107 114 128 / var(--tw-text-opacity))}.text-gray-600{--tw-text-opacity: 1;color:rgb(75 85 99 / var(--tw-text-opacity))}.text-gray-700{--tw-text-opacity: 1;color:rgb(55 65 81 / var(--tw-text-opacity))}.text-gray-900{--tw-text-opacity: 1;color:rgb(17 24 39 / var(--tw-text-opacity))}.underline{text-decoration:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.w-5{width:1.25rem}.w-8{width:2rem}.w-auto{width:auto}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}@media (min-width:640px){.sm\:rounded-lg{border-radius:.5rem}.sm\:block{display:block}.sm\:items-center{align-items:center}.sm\:justify-start{justify-content:flex-start}.sm\:justify-between{justify-content:space-between}.sm\:h-20{height:5rem}.sm\:ml-0{margin-left:0}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:pt-0{padding-top:0}.sm\:text-left{text-align:left}.sm\:text-right{text-align:right}}@media (min-width:768px){.md\:border-t-0{border-top-width:0}.md\:border-l{border-left-width:1px}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (min-width:1024px){.lg\:px-8{padding-left:2rem;padding-right:2rem}}@media (prefers-color-scheme:dark){.dark\:bg-gray-800{--tw-bg-opacity: 1;background-color:rgb(31 41 55 / var(--tw-bg-opacity))}.dark\:bg-gray-900{--tw-bg-opacity: 1;background-color:rgb(17 24 39 / var(--tw-bg-opacity))}.dark\:border-gray-700{--tw-border-opacity: 1;border-color:rgb(55 65 81 / var(--tw-border-opacity))}.dark\:text-white{--tw-text-opacity: 1;color:rgb(255 255 255 / var(--tw-text-opacity))}.dark\:text-gray-400{--tw-text-opacity: 1;color:rgb(156 163 175 / var(--tw-text-opacity))}.dark\:text-gray-500{--tw-text-opacity: 1;color:rgb(107 114 128 / var(--tw-text-opacity))}}
-        </style>
+  <!-- Favicons -->
+  <link href="https://admission.bubt.edu.bd/assets/img/brand/favicon.png" rel="icon">
+  <link href="https://admission.bubt.edu.bd/assets/img/brand/favicon.png" rel="apple-touch-icon">
 
-        <style>
-            body {
-                font-family: 'Nunito', sans-serif;
-            }
-        </style>
-    </head>
-    <body class="antialiased">
-        <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
-            @if (Route::has('login'))
-                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-                    @auth
-                        <a href="{{ url('/home') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Home</a>
-                    @else
-                        <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
+  <!-- Vendor CSS Files -->
+  <link href="https://icpc.bubt.edu.bd/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="https://icpc.bubt.edu.bd/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="https://icpc.bubt.edu.bd/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://icpc.bubt.edu.bd/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://icpc.bubt.edu.bd/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="https://icpc.bubt.edu.bd/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="https://icpc.bubt.edu.bd/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-            <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
-                <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
-                    <svg viewBox="0 0 651 192" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-16 w-auto text-gray-700 sm:h-20">
-                        <g clip-path="url(#clip0)" fill="#EF3B2D">
-                            <path d="M248.032 44.676h-16.466v100.23h47.394v-14.748h-30.928V44.676zM337.091 87.202c-2.101-3.341-5.083-5.965-8.949-7.875-3.865-1.909-7.756-2.864-11.669-2.864-5.062 0-9.69.931-13.89 2.792-4.201 1.861-7.804 4.417-10.811 7.661-3.007 3.246-5.347 6.993-7.016 11.239-1.672 4.249-2.506 8.713-2.506 13.389 0 4.774.834 9.26 2.506 13.459 1.669 4.202 4.009 7.925 7.016 11.169 3.007 3.246 6.609 5.799 10.811 7.66 4.199 1.861 8.828 2.792 13.89 2.792 3.913 0 7.804-.955 11.669-2.863 3.866-1.908 6.849-4.533 8.949-7.875v9.021h15.607V78.182h-15.607v9.02zm-1.431 32.503c-.955 2.578-2.291 4.821-4.009 6.73-1.719 1.91-3.795 3.437-6.229 4.582-2.435 1.146-5.133 1.718-8.091 1.718-2.96 0-5.633-.572-8.019-1.718-2.387-1.146-4.438-2.672-6.156-4.582-1.719-1.909-3.032-4.152-3.938-6.73-.909-2.577-1.36-5.298-1.36-8.161 0-2.864.451-5.585 1.36-8.162.905-2.577 2.219-4.819 3.938-6.729 1.718-1.908 3.77-3.437 6.156-4.582 2.386-1.146 5.059-1.718 8.019-1.718 2.958 0 5.656.572 8.091 1.718 2.434 1.146 4.51 2.674 6.229 4.582 1.718 1.91 3.054 4.152 4.009 6.729.953 2.577 1.432 5.298 1.432 8.162-.001 2.863-.479 5.584-1.432 8.161zM463.954 87.202c-2.101-3.341-5.083-5.965-8.949-7.875-3.865-1.909-7.756-2.864-11.669-2.864-5.062 0-9.69.931-13.89 2.792-4.201 1.861-7.804 4.417-10.811 7.661-3.007 3.246-5.347 6.993-7.016 11.239-1.672 4.249-2.506 8.713-2.506 13.389 0 4.774.834 9.26 2.506 13.459 1.669 4.202 4.009 7.925 7.016 11.169 3.007 3.246 6.609 5.799 10.811 7.66 4.199 1.861 8.828 2.792 13.89 2.792 3.913 0 7.804-.955 11.669-2.863 3.866-1.908 6.849-4.533 8.949-7.875v9.021h15.607V78.182h-15.607v9.02zm-1.432 32.503c-.955 2.578-2.291 4.821-4.009 6.73-1.719 1.91-3.795 3.437-6.229 4.582-2.435 1.146-5.133 1.718-8.091 1.718-2.96 0-5.633-.572-8.019-1.718-2.387-1.146-4.438-2.672-6.156-4.582-1.719-1.909-3.032-4.152-3.938-6.73-.909-2.577-1.36-5.298-1.36-8.161 0-2.864.451-5.585 1.36-8.162.905-2.577 2.219-4.819 3.938-6.729 1.718-1.908 3.77-3.437 6.156-4.582 2.386-1.146 5.059-1.718 8.019-1.718 2.958 0 5.656.572 8.091 1.718 2.434 1.146 4.51 2.674 6.229 4.582 1.718 1.91 3.054 4.152 4.009 6.729.953 2.577 1.432 5.298 1.432 8.162 0 2.863-.479 5.584-1.432 8.161zM650.772 44.676h-15.606v100.23h15.606V44.676zM365.013 144.906h15.607V93.538h26.776V78.182h-42.383v66.724zM542.133 78.182l-19.616 51.096-19.616-51.096h-15.808l25.617 66.724h19.614l25.617-66.724h-15.808zM591.98 76.466c-19.112 0-34.239 15.706-34.239 35.079 0 21.416 14.641 35.079 36.239 35.079 12.088 0 19.806-4.622 29.234-14.688l-10.544-8.158c-.006.008-7.958 10.449-19.832 10.449-13.802 0-19.612-11.127-19.612-16.884h51.777c2.72-22.043-11.772-40.877-33.023-40.877zm-18.713 29.28c.12-1.284 1.917-16.884 18.589-16.884 16.671 0 18.697 15.598 18.813 16.884h-37.402zM184.068 43.892c-.024-.088-.073-.165-.104-.25-.058-.157-.108-.316-.191-.46-.056-.097-.137-.176-.203-.265-.087-.117-.161-.242-.265-.345-.085-.086-.194-.148-.29-.223-.109-.085-.206-.182-.327-.252l-.002-.001-.002-.002-35.648-20.524a2.971 2.971 0 00-2.964 0l-35.647 20.522-.002.002-.002.001c-.121.07-.219.167-.327.252-.096.075-.205.138-.29.223-.103.103-.178.228-.265.345-.066.089-.147.169-.203.265-.083.144-.133.304-.191.46-.031.085-.08.162-.104.25-.067.249-.103.51-.103.776v38.979l-29.706 17.103V24.493a3 3 0 00-.103-.776c-.024-.088-.073-.165-.104-.25-.058-.157-.108-.316-.191-.46-.056-.097-.137-.176-.203-.265-.087-.117-.161-.242-.265-.345-.085-.086-.194-.148-.29-.223-.109-.085-.206-.182-.327-.252l-.002-.001-.002-.002L40.098 1.396a2.971 2.971 0 00-2.964 0L1.487 21.919l-.002.002-.002.001c-.121.07-.219.167-.327.252-.096.075-.205.138-.29.223-.103.103-.178.228-.265.345-.066.089-.147.169-.203.265-.083.144-.133.304-.191.46-.031.085-.08.162-.104.25-.067.249-.103.51-.103.776v122.09c0 1.063.568 2.044 1.489 2.575l71.293 41.045c.156.089.324.143.49.202.078.028.15.074.23.095a2.98 2.98 0 001.524 0c.069-.018.132-.059.2-.083.176-.061.354-.119.519-.214l71.293-41.045a2.971 2.971 0 001.489-2.575v-38.979l34.158-19.666a2.971 2.971 0 001.489-2.575V44.666a3.075 3.075 0 00-.106-.774zM74.255 143.167l-29.648-16.779 31.136-17.926.001-.001 34.164-19.669 29.674 17.084-21.772 12.428-43.555 24.863zm68.329-76.259v33.841l-12.475-7.182-17.231-9.92V49.806l12.475 7.182 17.231 9.92zm2.97-39.335l29.693 17.095-29.693 17.095-29.693-17.095 29.693-17.095zM54.06 114.089l-12.475 7.182V46.733l17.231-9.92 12.475-7.182v74.537l-17.231 9.921zM38.614 7.398l29.693 17.095-29.693 17.095L8.921 24.493 38.614 7.398zM5.938 29.632l12.475 7.182 17.231 9.92v79.676l.001.005-.001.006c0 .114.032.221.045.333.017.146.021.294.059.434l.002.007c.032.117.094.222.14.334.051.124.088.255.156.371a.036.036 0 00.004.009c.061.105.149.191.222.288.081.105.149.22.244.314l.008.01c.084.083.19.142.284.215.106.083.202.178.32.247l.013.005.011.008 34.139 19.321v34.175L5.939 144.867V29.632h-.001zm136.646 115.235l-65.352 37.625V148.31l48.399-27.628 16.953-9.677v33.862zm35.646-61.22l-29.706 17.102V66.908l17.231-9.92 12.475-7.182v33.841z"/>
-                        </g>
-                    </svg>
-                </div>
 
-                <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
-                    <div class="grid grid-cols-1 md:grid-cols-2">
-                        <div class="p-6">
-                            <div class="flex items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" /></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laravel.com/docs" class="underline text-gray-900 dark:text-white">Documentation</a></div>
-                            </div>
+  <meta property="og:title" content="ICPC Asia Dhaka Regional Contest - BUBT" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image:alt" content="ICPC Asia Dhaka Regional Contest - BUBT" />
+  <meta property="og:image" content="https://icpc.bubt.edu.bd/assets/img/bubt-icpc-logo.jpg" />
+  <meta property="og:url" content="https://icpc.bubt.edu.bd" />
+  <meta property="og:site_name" content="ICPC Asia Dhaka Regional Contest - BUBT" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:app_id" content="972215253142455" />
+  <meta property="fb:app_id" content="972215253142455" />
+  <meta property="og:canonical" content="https://icpc.bubt.edu.bd" />
+  <meta property="og:description" content="The International Collegiate Programming Contest is an algorithmic programming contest for college students. Teams of three, representing their university, work to solve the most real-world problems, fostering collaboration, creativity, innovation, and the ability to perform under pressure. Through training and competition, teams challenge each other to raise the bar on the possible. Quite simply, it is the oldest, largest, and most prestigious programming contest in the world." />
 
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel has wonderful, thorough documentation covering every aspect of the framework. Whether you are new to the framework or have previous experience with Laravel, we recommend reading all of the documentation from beginning to end.
-                                </div>
-                            </div>
-                        </div>
+  <!-- Template Main CSS File -->
+  <link href="https://icpc.bubt.edu.bd/assets/css/team.css" rel="stylesheet">
+  <link href="https://icpc.bubt.edu.bd/assets/css/style.css" rel="stylesheet">
 
-                        <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-t-0 md:border-l">
-                            <div class="flex items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-gray-500"><path stroke-linecap="round" d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z" /></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laracasts.com" class="underline text-gray-900 dark:text-white">Laracasts</a></div>
-                            </div>
+	<link rel="stylesheet" type="text/css" href="https://icpc.bubt.edu.bd/assets/vendor/datatable/css/dataTables.bootstrap5.min.css">
+	<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script type="text/javascript" language="javascript" src="https://icpc.bubt.edu.bd/assets/vendor/datatable/js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" language="javascript" src="https://icpc.bubt.edu.bd/assets/vendor/datatable/js/dataTables.bootstrap5.min.js"></script>
 
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laracasts offers thousands of video tutorials on Laravel, PHP, and JavaScript development. Check them out, see for yourself, and massively level up your development skills in the process.
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="p-6 border-t border-gray-200 dark:border-gray-700">
-                            <div class="flex items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" /></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laravel-news.com/" class="underline text-gray-900 dark:text-white">Laravel News</a></div>
-                            </div>
+</head>
 
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel News is a community driven portal and newsletter aggregating all of the latest and most important news in the Laravel ecosystem, including new package releases and tutorials.
-                                </div>
-                            </div>
-                        </div>
+<body>
 
-                        <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-l">
-                            <div class="flex items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-gray-500"><path stroke-linecap="round" stroke-linejoin="round" d="M6.115 5.19l.319 1.913A6 6 0 008.11 10.36L9.75 12l-.387.775c-.217.433-.132.956.21 1.298l1.348 1.348c.21.21.329.497.329.795v1.089c0 .426.24.815.622 1.006l.153.076c.433.217.956.132 1.298-.21l.723-.723a8.7 8.7 0 002.288-4.042 1.087 1.087 0 00-.358-1.099l-1.33-1.108c-.251-.21-.582-.299-.905-.245l-1.17.195a1.125 1.125 0 01-.98-.314l-.295-.295a1.125 1.125 0 010-1.591l.13-.132a1.125 1.125 0 011.3-.21l.603.302a.809.809 0 001.086-1.086L14.25 7.5l1.256-.837a4.5 4.5 0 001.528-1.732l.146-.292M6.115 5.19A9 9 0 1017.18 4.64M6.115 5.19A8.965 8.965 0 0112 3c1.929 0 3.716.607 5.18 1.64" /></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold text-gray-900 dark:text-white">Vibrant Ecosystem</div>
-                            </div>
+  <!-- ======= Header ======= -->
+  <header id="header" class="align-items-center header-transparent ">
 
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel's robust library of first-party tools and libraries, such as <a href="https://forge.laravel.com" class="underline">Forge</a>, <a href="https://vapor.laravel.com" class="underline">Vapor</a>, <a href="https://nova.laravel.com" class="underline">Nova</a>, and <a href="https://envoyer.io" class="underline">Envoyer</a> help you take your projects to the next level. Pair them with powerful open source libraries like <a href="https://laravel.com/docs/billing" class="underline">Cashier</a>, <a href="https://laravel.com/docs/dusk" class="underline">Dusk</a>, <a href="https://laravel.com/docs/broadcasting" class="underline">Echo</a>, <a href="https://laravel.com/docs/horizon" class="underline">Horizon</a>, <a href="https://laravel.com/docs/sanctum" class="underline">Sanctum</a>, <a href="https://laravel.com/docs/telescope" class="underline">Telescope</a>, and more.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div class="container container-xs-fluid d-flex align-items-center justify-content-between mb-2">
 
-                <div class="flex justify-center mt-4 sm:items-center sm:justify-between">
-                    <div class="text-center text-sm text-gray-500 sm:text-left">
-                        <div class="flex items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="-mt-px w-5 h-5 text-gray-400">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
-                            </svg>
+      <div class="header-top-left">
+        <div class="logo">
+            
+          <!-- <h1 class="text-light"><a href="https://icpc.bubt.edu.bd/"><span>ICPC</span></a></h1>-->
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <a href="https://icpc.bubt.edu.bd/"><img src="https://icpc.bubt.edu.bd/assets/img/icpc_logo_small.png" alt="" class="img-fluid"></a> &nbsp; &nbsp; &nbsp;
+          <a href="https://bubt.edu.bd"><img src="https://www.sub.ac.bd/uploads/logo/cdcbff91d69b664eef72.jpg" alt="" class="img-fluid"></a>
+        </div>
+        </div>
+      
+        <div class="header-top-right">
+          <img src="https://icpc.bubt.edu.bd/assets/img/sponsors/digital-bangladesh.png" alt="" class="rounded" style="height: 50px; margin-top:10px;">
+          &nbsp;
+          <img class="rounded" style="height: 50px; margin-top:10px;" src="https://icsct.bubt.edu.bd/wp-content/uploads/2022/01/ICT_Division-e1641020515750.png" alt="">
+          &nbsp; 
+          <img class="rounded" style="height: 50px; margin-top:10px;" src="https://icpc.bubt.edu.bd/assets/img/bcc_logo.png" alt="">
+          &nbsp; 
+          &nbsp; 
+          &nbsp; 
+        </div>
+    </div>
 
-                            <a href="https://laravel.bigcartel.com" class="ml-1 underline">
-                                Shop
-                            </a>
+  
+    <div class="container-fluid d-flex justify-content-between align-items-center main-menu">
+      <div class="logo">
 
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="ml-4 -mt-px w-5 h-5 text-gray-400">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
-                            </svg>
+      </div>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="active " href="https://icpc.bubt.edu.bd/">Home</a></li>
 
-                            <a href="https://github.com/sponsors/taylorotwell" class="ml-1 underline">
-                                Sponsor
-                            </a>
-                        </div>
-                    </div>
+          <li><a href="https://icpc.bubt.edu.bd/about-icpc.php">About ICPC</a></li>
+          
+          <!--<li class="dropdown"><a href="https://icpc.bubt.edu.bd/">Messages 
+            <i class="bi bi-chevron-down"></i></a>
+            <ul> 
+                  <li><a href="https://icpc.bubt.edu.bd/message-from-vc.php">Message From Vice-Chancellor</a></li>  
+  
+            </ul>
+          </li>-->
 
-                    <div class="ml-4 text-center text-sm text-gray-500 sm:text-right sm:ml-0">
-                        Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
-                    </div>
-                </div>
+          <li class="dropdown"><a href="https://icpc.bubt.edu.bd/">Contest 
+            <i class="bi bi-chevron-down"></i></a>
+            <ul>
+
+              <li class="dropdown"><a href="#"><span>Rules</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="https://icpc.bubt.edu.bd/online-contest-rules.php">Online Contest</a></li>
+                  <li><a href="https://icpc.bubt.edu.bd/onsite-contest-rules.php">On Site Contest</a></li>
+                </ul>
+              </li>
+
+              <li><a href="https://icpc.bubt.edu.bd/important-date-time.php">Important Date &amp; Time</a></li>
+
+              <li class="dropdown"><a href="#"><span>Schedule</span><i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="https://icpc.bubt.edu.bd/online-contest-schedule.php">Online Contest</a></li>
+                  <li><a href="https://icpc.bubt.edu.bd/onsite-program-schedule.php">On Site Contest</a></li>
+                </ul>
+              </li>
+
+              <li><a href="https://icpc.bubt.edu.bd/contest-environment.php">Contest Environment</a></li>
+
+              <li class="dropdown"><a href="#"><span>Standings</span><i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="https://bapsoj.org/contests/icpc-preliminary-dhaka-2023/standings">Online Preliminary Contest</a></li>
+                  <!-- <li><a href="https://icpc.global/regionals/finder/Dhaka-2023/standings">On Site Contest</a></li> --> 
+                </ul>
+              </li>
+
+              <li class="dropdown"><a href="#"><span>Team Selection</span><i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="https://icpc.bubt.edu.bd/qualification-creiteria.php">Qualification Criteria</a></li>
+                  <!-- <li><a href="https://icpc.bubt.edu.bd/university-slots.php">University Slots</a></li> 
+                  <li><a href="https://icpc.bubt.edu.bd/selected-teams.php">Selected Teams</a></li>  -->
+                </ul>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="dropdown"><a href="#">Registration<i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="https://icpc.bubt.edu.bd/local-registration.php">Local Registration</a></li>
+              <li><a href="https://icpc.bubt.edu.bd/international-registration.php">International Registration</a></li>
+              <li class="dropdown"><a href="https://icpc.bubt.edu.bd/">Registration <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="https://icpc.global/regionals/finder/Dhaka-Preliminary-2024">Online Preliminary</a></li>
+                  <!-- <li><a href="https://icpc.bubt.edu.bd/registration.php">School / College Registration</a></li> -->
+                  <!-- <li><a href="https://icpc.bubt.edu.bd/payment-form.php">Onsite Final Registration</a></li> -->
+                </ul>
+              <!-- <li><a href="https://icpc.bubt.edu.bd/registration.php">Registration</a></li>
+              <li><a href="https://icpc.bubt.edu.bd/accommodation-payment.php">Payment</a></li> -->
+
+              
+              <li class="dropdown"><a href="https://icpc.bubt.edu.bd/">Payment Form<i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="https://icpc.bubt.edu.bd/online-payment-form.php">Preliminary Registration Payment</a></li>
+                  <li><a href="https://icpc.bubt.edu.bd/onsite-payment-form.php">Onsite Registration Payment</a></li>
+                  <li><a href="https://icpc.bubt.edu.bd/accommodation-payment.php">Accommodation Payment</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="https://icpc.bubt.edu.bd/">Payment Lists<i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="https://icpc.bubt.edu.bd/payment-list.php">Preliminary Payment Lists</a></li>
+                  <li><a href="https://icpc.bubt.edu.bd/onsite-payment-list.php">Onsite Payment Lists</a></li>
+                  <li><a href="https://icpc.bubt.edu.bd/accommodation-payment-list.php">Accommodation Payment Lists</a></li>
+                </ul>
+              </li>
+
+              <li class="dropdown"><a href="https://icpc.bubt.edu.bd/">Accepted Team<i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="https://icpc.bubt.edu.bd/accepted-teams.php">Preliminary Teams</a></li>
+                  <li><a href="https://icpc.bubt.edu.bd/onsite-accepted-teams.php">Onsite Teams</a></li>
+                  <li><a href="https://icpc.bubt.edu.bd/accommodation-selected.php">Accommodation Lists</a></li>
+                  <li><a href="https://icpc.bubt.edu.bd/travel-grants-selected.php">Travel Grants Lists</a></li>
+                </ul>
+              </li>
+
+              <li class="dropdown"><a href="https://icpc.bubt.edu.bd/">Confirmation Letter<i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="https://icpc.bubt.edu.bd/confirmation-letter.php">Contest Confirmation Letter</a></li>
+                  <li><a href="https://icpc.bubt.edu.bd/accommodation-confirmation-letter.php">Accommodation Confirmation Letter</a></li>
+                  <li><a href="https://icpc.bubt.edu.bd/travel-grant-letter.php">Travel Grant Confirmation Letter</a></li>
+                </ul>
+              </li>
+
+              <!-- <li><a href="https://icpc.bubt.edu.bd/accepted-teams.php">Accepted Team</a></li> -->
+
+              
+            </ul>
+          </li>
+          
+          <li class="dropdown"><a href="https://icpc.bubt.edu.bd/">Local Info <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="https://icpc.bubt.edu.bd/host-info.php">Host University</a></li>
+              <li><a href="https://icpc.bubt.edu.bd/beautiful-dhaka.php">Beautiful Dhaka</a></li>
+              <li><a href="https://icpc.bubt.edu.bd/location.php">Venue Location</a></li>
+              <li><a href="https://icpc.bubt.edu.bd/weather.php">Weather</a></li>
+              <li><a href="https://icpc.bubt.edu.bd/food.php">Food</a></li>
+              <li><a href="https://icpc.bubt.edu.bd/visa-information.php">Visa Information</a></li>
+            </ul>
+          </li>
+          <!-- <li class="dropdown"><a href="https://icpc.bubt.edu.bd/">Committee <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="https://icpc.bubt.edu.bd/executive-committee.php">Executive Committee</a></li> 
+              <li><a href="https://icpc.bubt.edu.bd/publication-committee.php">Publication Committee</a></li> 
+              <li><a href="https://icpc.bubt.edu.bd/publicity-committee.php">Publicity Committee</a></li> 
+              <li><a href="https://icpc.bubt.edu.bd/registration-committee.php">Registration & Web Site Committee</a></li> 
+              <li><a href="https://icpc.bubt.edu.bd/system-committee.php">System (Hardware/Software) Committee</a></li> 
+              <li><a href="https://icpc.bubt.edu.bd/invitation-committee.php">Invitation & Reception Committee</a></li> 
+              <li><a href="https://icpc.bubt.edu.bd/sponsor-committee.php">Sponsor & Finance Committee</a></li> 
+              <li><a href="https://icpc.bubt.edu.bd/purchase-committee.php">Purchase Committee</a></li> 
+              <li><a href="https://icpc.bubt.edu.bd/event-committee.php">Event Management Committee</a></li> 
+              <li><a href="https://icpc.bubt.edu.bd/accommodation-committee.php">Accommodation Committee</a></li> 
+              <li><a href="https://icpc.bubt.edu.bd/excursions-committee.php">Excursions, Game Competitions & Fun Events Committee</a></li> 
+              <li><a href="https://icpc.bubt.edu.bd/entertainment-committee.php">Entertainment Committee</a></li> 
+              <li><a href="https://icpc.bubt.edu.bd/program-committee.php">Program Committee</a></li> 
+              <li><a href="https://icpc.bubt.edu.bd/discipline-committee.php">Safety, Security & Discipline Committee</a></li> 
+              <li><a href="https://icpc.bubt.edu.bd/health-committee.php">Health & Hygiene Committee</a></li> 
+            </ul>
+          </li> -->
+          <li class="dropdown"><a href="#">Others <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="https://icpc.bubt.edu.bd/volunteers.php">Volunteers</a></li>
+        
+              <!-- <li><a href="https://icpc.bubt.edu.bd/health-hygiene.php">Health & Hygiene</a></li> -->
+              <li><a href="https://icpc.bubt.edu.bd/assets/files/BUBTICPC2023.pdf" download>Download Poster</a></li>
+
+              <li><a href="https://icpc.bubt.edu.bd/accommodation.php">Accomodation</a></li>
+              <li><a href="https://icpc.bubt.edu.bd/travel-grant.php">Travel Grant</a></li>
+              <li><a href="https://icpc.bubt.edu.bd/leaderboard.php">Voting Leaderboard</a></li>
+
+            </ul>
+          </li>
+          
+          
+          <li><a href="https://icpc.bubt.edu.bd/coming-soon.php">Gallery</a></li>
+          <li><a href="https://icpc.bubt.edu.bd/contact-us.php">Contact Us</a></li>
+          <li style="margin-right: 15px; "><a  class="btn btn-warning" href="https://icpc.bubt.edu.bd/camp">Programming Camp</a></li>
+          <li style="margin-right: 15px; "><a  class="btn btn-warning" style="background: #8E24AA" href="https://icpc.bubt.edu.bd/seminar">Seminar</a></li>
+
+          <li style="margin-right: 15px; "><a  class="btn btn-primary" href="https://icpc.bubt.edu.bd/onsite-payment-form.php">Payment</a></li>
+
+          
+        </ul>
+
+        
+        <!-- <div class="top-right d-none d-sm-block">
+          <img class="rounded" style="height: 50px" src="https://icsct.bubt.edu.bd/wp-content/uploads/2022/01/ICT_Division-e1641020515750.png" alt="">
+          &nbsp; 
+          <img class="rounded" style="height: 50px" src="https://icpc.bubt.edu.bd/assets/img/bcc_logo.png" alt="">
+          &nbsp; &nbsp; 
+          <img class="rounded" style="height: 50px" src="https://icpc.bubt.edu.bd/assets/img/sibl.jpg" alt="">
+          &nbsp; &nbsp; 
+        </div> -->
+
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+      <div class="righ">
+
+      </div>
+    </div>
+
+
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex justify-cntent-center align-items-center">
+    <div id="heroCarousel" class="container carousel carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="carousel-container  d-none">
+          <h2 class="animate__animated animate__fadeInDown  d-none"><span>ICPC Asia Dhaka Regional Contest 2023</span></h2>
+          <p class="animate__animated animate__fadeInUp d-none">The International Collegiate Programming Contest is an algorithmic programming contest for college students. Teams of three, representing their university, work to solve the most real-world problems, fostering collaboration, creativity, innovation, and the ability to perform under pressure. Through training and competition, teams challenge each other to raise the bar on the possible. Quite simply, it is the oldest, largest, and most prestigious programming contest in the world. </p>
+
+           <div class="link ">
+            
+
+            <a href="https://icpc.bubt.edu.bd/health-hygiene.php" class="btn-get-started bg-danger animate__animated animate__fadeInUp d-inline text-black">Health & Hygiene</a>
+ 
+            <a href="https://icpc.bubt.edu.bd/onsite-contest-rules.php" class="btn-get-started bg-warning animate__animated animate__fadeInUp d-inline text-black">Onsite Contest Rules</a>
+            
+            <a href="https://icpc.bubt.edu.bd/confirmation-letter.php" class="btn-get-started bg-light animate__animated animate__fadeInUp d-inline text-black">Confirmation Letter</a>
+ 
+            
+            <a href="https://icpc.bubt.edu.bd/accommodation-confirmation-letter.php" class="btn-get-started bg-warning animate__animated animate__fadeInUp d-inline text-black">Accommodation Letter</a>
+
+            <a href="https://icpc.bubt.edu.bd/travel-grant-letter.php" class="btn-get-started bg-danger animate__animated animate__fadeInUp d-inline text-black">Travel Grant Letter</a>
+ 
+            
+          </div> 
+
+        </div>
+        
+        <div class="carousel-container "> 
+           <div class="link d-none ">
+            
+            
+            <a class="btn-get-started bg-danger animate__animated animate__fadeInUp animate__delay-2s 2s">
+            <h1>135</h1>
+            Institutions
+            </a>
+ 
+            <a class="btn-get-started bg-warning animate__animated animate__fadeInUp animate__delay-3s 3s">
+            <h1>2877</h1>
+            Registrations
+            </a>
+            
+
+            <a class="btn-get-started bg-info animate__animated animate__fadeInUp animate__delay-4s 4s">
+            <h1>2461</h1>
+            Acceptances
+            </a>
+ 
+            
+          </div> 
+
+        </div>
+        
+      </div>
+ 
+ 
+
+      <!-- <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>
+      </a> -->
+
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <div class="event-count-info">
+        <div class="container">
+             
+            <div class="col-md-12 text-center">
+            <div class="spacer-20"></div>
+                <br> 
+              <button class="btn btn-lg btn-danger text-bolder" style="font-size: 30px">Last date of payment for Onsite Contest on 22 October 2023</button> <br> <br>  <br> 
+              <div class="spacer-30"></div>
             </div>
         </div>
-    </body>
+    </div>
+
+    <div class="event-count-info d-none">
+        <div class="container">
+             
+            <div class="col-md-12 text-center">
+            <div class="spacer-20"></div>
+                <br> 
+              <a class="btn btn-lg btn-danger text-bolder" style="font-size: 30px" href="https://icpc.bubt.edu.bd/preliminary-password.php">Get Preliminary Password</a> <br> <br>  <br> 
+              <div class="spacer-30"></div>
+            </div>
+             
+            <div class="col-md-12 text-center">
+            <div class="spacer-20"></div>
+                <br> 
+                <p>
+                  Please follow the procedure to get your Online Preliminary Contest Password: <br>
+
+                  Go to the following Link: <a href="https://icpc.bubt.edu.bd/preliminary-password.php">https://icpc.bubt.edu.bd/preliminary-password.php</a> <br>
+
+                  <strong>Enter your “ICPC.global Team ID” in the text field.</strong> <br>
+
+                  <strong>Select your “Email” from the dropdown box.</strong> <br>
+                   
+
+                  <strong>Check your selected Email’s INBOX or SPAM section for password. </strong><br>
+
+                  Please see the attached image given below. <br>
+
+                  <img class="img-thumbnail rounded" src="https://icpc.bubt.edu.bd/assets/img/Password-Get.png" alt="Online Preliminary Contest Password"> <br>
+                </p>
+                <br> 
+              <div class="spacer-30"></div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="event-count-info">
+        <div class="container">
+            <div class="col-md-12">
+                <div class="example" data-date="2023-11-03 23:59:59"></div> 
+            </div>
+            <div class="col-md-12 text-center d-none">
+            <div class="spacer-20"></div>
+              <button class="btn btn-lg btn-danger text-bolder">Last date of Registration:  September 21, 2023</button> <br> <br>
+              <!-- <a href="https://icpc.bubt.edu.bd/online-payment-form.php" class="btn btn-lg btn-warning text-bolder">Click here for payment</a>  -->
+              <div class="spacer-30"></div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="sponsor-info section-bg my-5 ">
+        <div class="container">
+            <div class="row justify-content-md-center py-5">
+              <div class="col-md-12 text-center mb-5">
+            <div class="section-title">
+              <h2 class="text-secondary">Gold Sponsors</h2>
+            </div>
+
+                <a href="https://therapbd.com" target="_blank"><img class="rounded" style="height: 80px" src="https://icpc.bubt.edu.bd/assets/img/sponsors/therap.png" alt="Therap BD"></a>  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; 
+
+                <a href="https://www.dsinnovators.com/" target="_blank"><img class="rounded" style="height: 80px" src="https://icpc.bubt.edu.bd/assets/img/sponsors/dsi.png" alt="DSi"></a>  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+
+                <a href="https://www.siblbd.com" target="_blank"><img class="rounded" style="height: 80px" src="https://icpc.bubt.edu.bd/assets/img/sponsors/sibl.png" alt="SIBL"></a>  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+                
+                <a href="https://www.pranfoods.net" target="_blank"><img class="rounded" style="height: 80px" src="https://icpc.bubt.edu.bd/assets/img/sponsors/pran.png" alt="Pran"></a>  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; 
+              </div>
+              
+              <div class="col-md-12 text-center">
+                <div class="section-title">
+                  <h2 class="text-secondary">Other Sponsors</h2>
+                </div>
+            
+                <a href="https://www.facebook.com/profile.php?id=61550723024394" target="_blank"><img class="rounded" style="height: 60px" src="https://icpc.bubt.edu.bd/assets/img/sponsors/Aroma Tex logo.jpg" alt="Aroma Tex"></a>  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+                
+                <a href="https://afreenenterprise.com" target="_blank"><img class="rounded" style="height: 60px" src="https://icpc.bubt.edu.bd/assets/img/sponsors/AFREEN-ENTERPRISE-Main-Logo.png" alt="AFREEN ENTERPRISE"></a>  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; 
+
+                <a href="https://jouleslabs.com/" target="_blank"><img class="rounded" style="width: 200px" src="https://icpc.bubt.edu.bd/assets/img/sponsors/JoulesLab.png" alt="JoulesLab"></a>  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+          
+              </div> 
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ======= Services Section ======= -->
+    <section class="services">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up">
+            <div class="icon-box icon-box-pink">
+              <div class="icon"><i class='bx bxs-buildings'></i></div>
+              <h4 class="title"><a href="https://icpc.bubt.edu.bd/host-info.php">About BUBT</a></h4>
+              <p class="description">Bangladesh University of Business and Technology (BUBT) is a name that reflects the view of ‘committed to academic excellence’. </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon-box icon-box-cyan">
+              <div class="icon"><i class='bx bxs-bed'></i></div>
+              <h4 class="title"><a href="https://icpc.bubt.edu.bd/accommodation.php">Accommodation</a></h4>
+              <p class="description">There will be accommodation facility for outside Dhaka teams.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box icon-box-blue">
+              <div class="icon"><i class='bx bx-train'></i></div>
+              <h4 class="title"><a href="https://icpc.bubt.edu.bd/travel-grant.php">Travel Grant</a></h4>
+              <p class="description">BUBT will provide travel grant for the contestants who really need it</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box icon-box-green">
+              <div class="icon"><i class='bx bxs-heart-circle'></i></div>
+              <h4 class="title"><a href="https://icpc.bubt.edu.bd/accepted-teams.php">Vote Team Name</a></h4>
+              <p class="description">Choose your Favorite Team Name by giving votes to them. They can win the attractive prizes. </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
+      <div class="container">
+        <div class="section-title py-5">
+          <h2>Previous ICPC at BUBT</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 video-box">
+            <img src="https://icpc.bubt.edu.bd/assets/img/bubt-icpc-logo.jpg" class="img-fluid" alt="" style="max-width: 600px; width:100%">
+            <a href="https://www.youtube.com/watch?v=adbjM9S8a_s" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+          </div>
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
+
+            <div class="icon-box"> 
+              <h4 class="title"><a href="/2021"> ICPC Asia Dhaka Regional Contest 2021</a></h4>
+              <p >The Asia Dhaka regional phase of the two-day international collegiate programming contest was held at Bangladesh University of Business and Technology (BUBT). The event began with an inauguration ceremony on Friday afternoon and concluded on Saturday with the final competition, cultural activities, and prize distribution.</p> 
+<p>The event was inaugurated by Mezbahuddin Ahmed, Chairman of Bangladesh Accreditation Council and former Vice-Chancellor of Jagannath University. On the second day, Junaid Ahmed Palak, the Minister of State for Information and Technology, attended as the chief guest.</p>
+
+<p>The closing ceremony was presided over by BUBT Vice-Chancellor Dr. Mohammed Fayyaz Khan, and it was attended by Chairman of the Board of Trustees Md. Shamsul Huda, Pro-Vice Chancellor Dr. Md. Ali Noor and other members.</p>
+
+<p>The top three winning teams were DU_NotStrongEnough from Dhaka University (first place), BUET Potatoes from Bangladesh University of Technology and Engineering (second place), and JU_kzvd4729 from Jahangirnagar University (third place).</p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 video-box">
+            <img src="https://icpc.bubt.edu.bd/2014/images/trophy.gif" class="img-fluid" alt="" style="max-width: 600px; width:100%">
+            <a href="https://www.youtube.com/watch?v=3Y9ZZYp7Rlg" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+          </div>
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
+
+            <div class="icon-box"> 
+              <h4 class="title"><a href="/2014"> ACM-ICPC Asia Regional Dhaka Site Event - 2014</a></h4>
+              <p >ACM International Collegiate Programming Contest ( ACM-ICPC ) is an annual multi-tiered competition among the universities of the world. It is also known as ICPC. There are fourteen different sites in Asia that host Asia Regional Final and Dhaka is one of them. Each year the winner of the Asia Regional Dhaka Site Contest advances to the ACM-ICPC World Final. Like other sites, Dhaka Site Contest is also sponsored by IBM and operated under the auspices of the Association of Computing Machinery (ACM). ACM ICPC Dhaka Site Contest started in 1997. BUBT had the honor of hosting ACM-ICPC Dhaka Site Event in 2014. The event was highly successful, receiving praise from everyone.</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section class="features">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contests Features</h2>
+          <p>The annual event is comprised of several levels of competition</p>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-md-5">
+            <img src="assets/img/features-1.svg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 pt-4">
+            <h3>Local Contests</h3>
+            <p class="fst-italic">
+              Universities choose teams or hold local contests to select one or more teams to represent them at the next level of competition. Selection takes place from a field of over 300,000 students in computing disciplines worldwide.
+            </p> 
+          </div>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-md-5 order-1 order-md-2">
+            <img src="assets/img/features-2.svg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 pt-5 order-2 order-md-1">
+            <h3>Regional Contests</h3>
+            <p class="fst-italic">
+              Each year, the ICPC regionals begin at local competitions among classmates to determine who may represent their university. Success at one level leads to an invitation to the next. Each region progresses differently, but the end result is the same, the best teams advance. The final regional contest determines the teams advancing to the World Finals.
+            </p>
+          </div>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-md-5">
+            <img src="assets/img/features-3.svg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7 pt-5">
+            <h3>World Finals</h3>
+            <p class="fst-italic">The top teams from each regional contest from six different continents come together to compete by conquering the world's most challenging problem set. The goal is to earn the ultimate honor of being the best of the best problem solvers on the planet, the ICPC World Champions.</p> 
+          </div>
+        </div>
+ 
+
+      </div>
+    </section><!-- End Features Section -->
+
+    
+    <!-- ======= Services Section ======= -->
+    <section class="services bg-gray">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up">
+            <div class="icon-box icon-box-pink">
+              <div class="icon"><i class='bx bxs-help-circle'></i></div>
+              <h4 class="title"><a href="">Problem Analysis</a></h4>
+              <p class="description">Without knowing the problem, you can't move forward. So, have a clear understanding the problem to get a solution. </p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon-box icon-box-cyan">
+              <div class="icon"><i class='bx bxs-palette'></i></div>
+              <h4 class="title"><a href="">Design Algorithm</a></h4>
+              <p class="description">Design several algorithms for solving the problem. Do this process until the success.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box icon-box-blue">
+              <div class="icon"><i class='bx bx-code-block'></i></div>
+              <h4 class="title"><a href="">Implementation the Algorithm</a></h4>
+              <p class="description">Develop an action plan to implement and execute the solution process.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box icon-box-green">
+              <div class="icon"><i class='bx bxs-heart-circle'></i></div>
+              <h4 class="title"><a href="">Evaluate the Result</a></h4>
+              <p class="description">Keep track to evaluate the results and make sure the plan is performing well to solve the problem. </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Why Us Section ======= -->
+    <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
+      <div class="container">
+        <div class="section-title py-5">
+          <h2>ICT Division</h2>
+        </div>
+
+        <div class="row py-5"> 
+          <div class="col-lg-12 justify-content-center py-2 px-5">
+              <img class="w-50 float-start img-fluid" src="https://icpc.bubt.edu.bd/assets/img/ictd.png" alt="" />
+                            <p>
+                                In 2002, the name of the ministry was changed from ‘Science and Technology’ to ‘Ministry
+                                of
+                                Science and Information &amp; Communication Technology’. To give more thrust for ICT sector
+                                the
+                                Division has upgraded as Ministry of Information &amp; Communication Technology on
+                                04/12/2011. The
+                                change is the evidence of understanding of the importance of ICT from the highest policy
+                                level
+                                and also an indication that the government is keen to keep pace with modern changing
+                                world.
+                                After that on 10/02/2014 Ministry of Posts and Telecommunications and Ministry of ICT
+                                are
+                                integrated to Ministry of Posts, Telecommunications and Information Technology. From
+                                10/02/2014
+                                Ministry of ICT starts as a ICT Division. The change has brought new life to the
+                                activities of
+                                Information &amp; Communication Technology Division.
+
+                            </p>
+                            <h5>Vision</h5>
+                            <p>People-friendly information technology in building Sonar Bangla.</p>
+                            <h5>Mission</h5>
+                            <p>Establishment of a prosperous Sonar Bangla through reliable cyber access at the
+                                grassroots level,
+                                development of IT based human resources, export-oriented development of IT industry and
+                                the use
+                                of citizen-friendly IT technology.
+                            </p>
+                            <h5>Main Function:</h5>
+                            <p>
+                            </p><ol>
+                                <li>
+                                    Policy Matters relating to Information and Communication Technology (ICT) in
+                                    pursuance of
+                                    national objectives and plans.
+                                </li>
+                                <li>
+                                    Matters relating to Digital Bangladesh Task Force and other national entities on
+                                    ICT.
+                                </li>
+                                <li>
+                                    Co-ordination with other Ministries/Divisions in areas of ICT.
+                                </li>
+                                <li>Undertaking promotional activities and providing support to ICT surveys, research,
+                                    design
+                                    and development wherever necessary in coordination with concerned persons and
+                                    organizations
+                                    as well as national and international agencies.
+                                </li>
+                                <li> Commercialization of ICT services and formulation of guidelines for making those
+                                    easily
+                                    accessible to the people, and monitoring of its implementation.
+                                </li>
+                                <li>Undertaking appropriate measures for integrating Bangladesh with the current
+                                    ICT-related
+                                    development initiatives in the international arena.
+                                </li>
+                                <li>Liaison with International Organizations and matters relating to treaties and
+                                    agreements
+                                    with other countries and world bodies relating to subjects allotted to this
+                                    Division.</li>
+                                <li> All laws and rules on the subjects allotted to this Division.</li>
+                                <li>Undertaking any other measures needed for the promotion of ICT and making its
+                                    services
+                                    available at the door steps of the citizen.
+                                </li>
+                                <li>Providing assistance to other Ministries/Divisions for the promotion of
+                                    E-Governance,
+                                    E-Infrastructure, E-Health, E-Commerce and similar other areas,
+                                </li>
+                                <li> Taking initiatives on bridging the Digital Divide. 
+                                </li>
+                            </ol> 
+              <a href="https://ictd.gov.bd" class="btn btn-lg btn-warning text-bolder">Read More</a> 
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+    <!-- ======= Why Us Section ======= -->
+    <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
+      <div class="container">
+        <div class="section-title py-5">
+          <h2>Bangladesh Computer Council (BCC)</h2>
+        </div>
+
+        <div class="row py-5">
+          <div class="col-lg-6 video-box">
+            <img src="https://icpc.bubt.edu.bd/assets/img/bcc.jpg" class="img-fluid" alt=""> 
+          </div>
+
+          <div class="col-lg-6 justify-content-center py-2 px-5">
+ 
+              <p class="description">Bangladesh Computer Council (BCC) is a statutory body under the Ministry of Posts, Telecommunications and Information Technology, Government of Bangladesh (GOB).  It was established by Act No IX of 1990 passed by the Parliament. The main activities are (not limited to) encouraging and providing support for ICT related activities, formulating national ICT strategy and policy, creating standards and specifications of ICT tools for government organizations according to their necessity, working for human resource development in ICT sector. It has also established National Data Center for hosting all the government websites, e-mail services and web applications. It is the only TIER – 3 certified Government Data Center in Bangladesh. In the near future, it will act as the only Gateway to access internet services for all of the government organizations. BCC is continuing ICT infrastructure development of government through several development projects/programs to facilitate access to government services from root level. In this vision, BCC has organized workshops, seminars, training on subjects related to ICT and has established throughout the country UISC (Union Information and Service Center).</p>
+
+              <a href="https://bcc.gov.bd" class="btn btn-lg btn-warning text-bolder">Read More</a> 
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+
+  </main><!-- End #main -->
+
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+
+    <div class="footer-newsletter bg-white section-bg">
+      <div class="container-fluid">
+        <div class="row justify-content-md-center my-5 pb-5">
+          <div class="col-md-6 text-center">
+            
+            <div class="section-title">
+              <h2 class="text-secondary" >Supported By</h2>
+            </div>
+
+            <img class="rounded" style="height: 60px" src="https://icpc.bubt.edu.bd/assets/img/sponsors/digital-bangladesh.png" alt=""> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+            
+            <img class="rounded" style="height: 60px" src="https://icpc.bubt.edu.bd/assets/img/sponsors/ict.png" alt=""> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+            
+            <img class="rounded" style="height: 60px" src="https://icpc.bubt.edu.bd/assets/img/sponsors/bcc.png" alt=""> &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; 
+          </div>
+          <div class="col-md-6 text-center">
+            
+            <div class="section-title">
+              <h2 class="text-secondary" >Hosted By</h2>
+            </div>
+            <img class="rounded" style="height: 80px" src="https://icpc.bubt.edu.bd/assets/img/sponsors/bubt-logo.png" alt="">
+
+          </div> 
+        </div>
+
+        <div class="row justify-content-md-center my-5">
+          <div class="col-md-6 text-center">
+            
+            <div class="section-title">
+              <h2 class="text-secondary">Gold Sponsors</h2>
+            </div>
+            
+                
+                <a href="https://therapbd.com" target="_blank"><img class="rounded" style="height: 60px" src="https://icpc.bubt.edu.bd/assets/img/sponsors/therap.png" alt="Therap BD"></a>  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; 
+
+                <a href="https://www.dsinnovators.com/" target="_blank"><img class="rounded" style="height: 60px" src="https://icpc.bubt.edu.bd/assets/img/sponsors/dsi.png" alt="DSi"></a>  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+
+                <a href="https://www.siblbd.com" target="_blank"><img class="rounded" style="height: 60px" src="https://icpc.bubt.edu.bd/assets/img/sponsors/sibl.png" alt="SIBL"></a>  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+
+                <a href="https://www.pranfoods.net" target="_blank"><img class="rounded" style="height: 60px" src="https://icpc.bubt.edu.bd/assets/img/sponsors/pran.png" alt="Pran"></a>  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+
+                <!-- 
+                <a href="https://www.mgi.org" target="_blank"><img class="rounded" style="height: 60px" src="https://icpc.bubt.edu.bd/assets/img/sponsors/mgi.png" alt="Meghna Group of Industries"></a>  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; 
+                <br>
+                <a href="https://www.pranfoods.net" target="_blank"><img class="rounded" style="height: 60px" src="https://icpc.bubt.edu.bd/assets/img/sponsors/pran.png" alt="Pran"></a>  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; 
+                
+                <a href="https://www.nestle.com.bd" target="_blank"><img class="rounded" style="height: 60px" src="https://icpc.bubt.edu.bd/assets/img/sponsors/nestle.png" alt="Nestle"></a>  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; 
+                
+                <a href="https://www.nestle.com.bd/brands/maggi-noodles" target="_blank"><img class="rounded" style="height: 60px" src="https://icpc.bubt.edu.bd/assets/img/sponsors/maggi.png" alt="Maggi"></a>  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; 
+                
+                <a href="https://www.creativeitinstitute.com" target="_blank"><img class="rounded" style="height: 60px" src="https://icpc.bubt.edu.bd/assets/img/sponsors/creative-it.png" alt="Creative IT"></a>  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  -->
+          
+          </div> 
+          <div class="col-md-6 text-center">
+            
+            <div class="section-title">
+              <h2 class="text-secondary">Other Sponsors</h2>
+            </div>
+            
+                <a href="https://www.facebook.com/profile.php?id=61550723024394" target="_blank"><img class="rounded" style="height: 60px" src="https://icpc.bubt.edu.bd/assets/img/sponsors/Aroma Tex logo.jpg" alt="Aroma Tex"></a>  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+                
+                <a href="https://afreenenterprise.com" target="_blank"><img class="rounded" style="height: 60px" src="https://icpc.bubt.edu.bd/assets/img/sponsors/AFREEN-ENTERPRISE-Main-Logo.png" alt="AFREEN ENTERPRISE"></a>  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; 
+
+                <a href="https://jouleslabs.com/" target="_blank"><img class="rounded" style="width: 200px" src="https://icpc.bubt.edu.bd/assets/img/sponsors/JoulesLab.png" alt="JoulesLab"></a>  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; 
+                <!-- 
+                <a href="https://www.mgi.org" target="_blank"><img class="rounded" style="height: 60px" src="https://icpc.bubt.edu.bd/assets/img/sponsors/mgi.png" alt="Meghna Group of Industries"></a>  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; 
+                <br>
+                <a href="https://www.pranfoods.net" target="_blank"><img class="rounded" style="height: 60px" src="https://icpc.bubt.edu.bd/assets/img/sponsors/pran.png" alt="Pran"></a>  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; 
+                
+                <a href="https://www.nestle.com.bd" target="_blank"><img class="rounded" style="height: 60px" src="https://icpc.bubt.edu.bd/assets/img/sponsors/nestle.png" alt="Nestle"></a>  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; 
+                
+                <a href="https://www.nestle.com.bd/brands/maggi-noodles" target="_blank"><img class="rounded" style="height: 60px" src="https://icpc.bubt.edu.bd/assets/img/sponsors/maggi.png" alt="Maggi"></a>  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp; 
+                
+                <a href="https://www.creativeitinstitute.com" target="_blank"><img class="rounded" style="height: 60px" src="https://icpc.bubt.edu.bd/assets/img/sponsors/creative-it.png" alt="Creative IT"></a>  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  -->
+          
+          </div> 
+        </div>
+        
+      </div>
+      <div class="container d-none">
+          
+        <div class="row justify-content-md-center my-5">
+          <div class="col-md-6 text-center">
+            
+            <div class="section-title">
+              <h2 class="text-secondary">Media Partner</h2>
+            </div>
+                <a href="https://www.somoynews.tv" target="_blank"><img class="rounded" style="height: 60px" src="https://icpc.bubt.edu.bd/assets/img/sponsors/somoy-tv.png" alt="Somoy TV"></a>
+          </div> 
+          <div class="col-md-6 text-center">
+            
+            <div class="section-title">
+              <h2 class="text-secondary">In Association With</h2>
+            </div>
+                <a href="https://www.prothomalo.com" target="_blank"><img class="rounded" style="height: 60px" src="https://icpc.bubt.edu.bd/assets/img/sponsors/prothom-alo.png" alt="Prothom Alo"></a>
+          </div> 
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 footer-links">
+            <h4>Important Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i>
+                <a href="https://icpc.global/regionals/abouticpc" target="_blank"><span>About Contest</span></a>
+              </li>
+              <li><i class="bx bx-chevron-right"></i>
+                <a href="https://worldfinals.icpc.global" target="_blank"><span>World Final</span></a>
+              </li> 
+              <li><i class="bx bx-chevron-right"></i>
+                <a href="#"><span>Director's Report </span></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              State University of Bangladesh (SUB) <br>
+              Purbachal, Dhaka-1203, Bangladesh<br>
+              <br><br>
+              <!-- <strong>Phone:</strong> 01932-087442<br> -->
+              <strong>Email:</strong> contest@sub.ac.bd<br>
+            </p>
+
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-info">
+            <h3>About SUB Contest MS</h3>
+            <p>Once again, after a year, State University of Bangladesh (SUB) has the privilege to host an online programming contest. The entire SUB community, together with the Department of Computer Science and Engineering (CSE), is thrilled to organize this impactful event on the SUB campus, aiming to inspire students to contribute towards a brighter future.</p>            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="https://www.facebook.com/icpcbubt" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy;  <strong><span>2024 </span></strong>. Developed with <i class='bx bxs-heart text-danger'></i> by SUB Student
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="https://convocation.bubt.edu.bd/js/modernizr.js"></script><!-- Modernizr -->
+  <!-- Vendor JS Files -->
+  <script src="https://icpc.bubt.edu.bd/assets/vendor/purecounter/purecounter.js"></script>
+  <script src="https://icpc.bubt.edu.bd/assets/vendor/aos/aos.js"></script>
+  <script src="https://icpc.bubt.edu.bd/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://icpc.bubt.edu.bd/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="https://icpc.bubt.edu.bd/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="https://icpc.bubt.edu.bd/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="https://icpc.bubt.edu.bd/assets/vendor/waypoints/noframework.waypoints.js"></script> 
+
+  <!-- Template Main JS File -->
+  <script src="https://icpc.bubt.edu.bd/assets/js/main.js"></script>
+
+
+  
+  <script type="text/javascript" src="https://convocation.bubt.edu.bd/js/TimeCircles.js"></script>
+    <link href="https://convocation.bubt.edu.bd/css/TimeCircles.css" rel="stylesheet">
+  <script>
+
+  $(document).ready(function() {
+
+    $(".example").TimeCircles({ time: {
+          Days: { color: "#DD5246" },
+          Hours: { color: "#17A05D" },
+          Minutes: { color: "#4B8BF4" },
+          Seconds: { color: "#FFCD42" }
+      }});
+
+  }); 
+
+
+  $(document).ready(function () {
+    $('#teamTable').DataTable({
+        ordering: false,
+        stateSave: true
+    });
+    $('#paymentTable').DataTable({
+        ordering: false,
+        order: [[ 2, "Completed", "Closed", "Invalid" ]],
+        stateSave: true
+    });
+    $('#teamTable2').DataTable({
+        order: [[ 2, "asc" ]],
+        stateSave: true
+    });
+  });
+ 
+  </script>
+  
+</body>
+
 </html>
